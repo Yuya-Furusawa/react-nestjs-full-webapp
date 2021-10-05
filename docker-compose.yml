@@ -28,7 +28,7 @@ services:
     depends_on:
       api-prod:
         condition: service_healthy
-      app-apod:
+      app-prod:
         condition: service_started
     networks:
       - shared-network
